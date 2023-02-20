@@ -1,0 +1,17 @@
+my-snowflake-db:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: oc19328.us-east-2.aws
+
+      # User/password auth
+      user: vishmandala01
+      password: AmmaNanna16!
+
+      role: transformer
+      database: Analytics
+      warehouse: transforming
+      schema: dbt_demo_002
+      threads: 1
+      client_session_keep_alive: False
